@@ -31,16 +31,6 @@
       "points": 2
     },
     {
-      "name": "The code for print_indices doesn't have a counting variable.",
-      "setup": "",
-      "run": "pytest tests/test_lists.py::test_no_counter_var",
-      "input": "",
-      "output": "",
-      "comparison": "included",
-      "timeout": 10,
-      "points": 3
-    },
-    {
       "name": "words_in_common should return a list.",
       "setup": "",
       "run": "pytest tests/test_lists.py::test_words_in_common_return_list",
