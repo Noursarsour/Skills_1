@@ -17,6 +17,6 @@ jobs:
           pip install pytest pylint
       - name: Evaluate code style
         run: |
-          pylint *.py --output-format=colorized
+          pylint **/*.py --output-format=colorized --confidence=HIGH --good-names-rgxs=^[A-Za-z]$ || exit 0
       - name: Run tests
         uses: education/autograding@v1
