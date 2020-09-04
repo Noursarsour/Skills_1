@@ -1,6 +1,6 @@
-"""SKILLS: LISTS
+"""lists.py
 
-Complete the following functions.
+Assessment: List Skills
 """
 
 
@@ -23,8 +23,6 @@ def print_indices(items):
         berry 1
         cherry 2
     """
-
-    print("Nothing at all")
 
 
 def words_in_common(words1, words2):
@@ -60,8 +58,6 @@ def words_in_common(words1, words2):
         []
     """
 
-    return ["the wrong thing"]
-
 
 def every_other_item(items):
     """Return every other item in `items`, starting at first item.
@@ -71,8 +67,6 @@ def every_other_item(items):
        >>> every_other_item(['a', 400, True, 'b', 0])
        ['a', True, 0]
     """
-
-    return ["the wrong thing"]
 
 
 def smallest_n_items(items, n):
@@ -95,5 +89,3 @@ def smallest_n_items(items, n):
         >>> smallest_n_items([1, 1, 1, 1, 1, 1], 2)
         [1, 1]
     """
-
-    return []
