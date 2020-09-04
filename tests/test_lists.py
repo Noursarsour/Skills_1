@@ -1,9 +1,13 @@
+"""tests/test_lists.py
+
+Tests for lists.py
+"""
+
 import sys
 import os
 
 sys.path.append(os.path.join(os.path.dirname(__file__), ".."))
 
-import pytest
 from lists import print_indices, words_in_common, every_other_item, smallest_n_items
 
 
@@ -42,22 +46,13 @@ def test_print_each_index(capsys):
     assert "2" in output
 
 
-def test_no_counter_var():
-    """The code for print_indices doesn't have a counting variable.
-
-    :points: 3
-    """
-
-    pass
-
-
 def test_words_in_common_return_list():
     """words_in_common should return a list.
 
     :points: 1
     """
 
-    assert type(words_in_common(["test"], ["test"])) is list
+    assert isinstance(words_in_common(["test"], ["test"]), list) is True
 
 
 def test_return_common_words():
