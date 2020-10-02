@@ -1,83 +1,94 @@
-"""skills-1/functions.py
+"""SKILLS: FUNCTIONS
 
-Complete each of the prompts below.
+Please complete the following promps.
 """
 
-##
-# Write a function called get_hometown that returns the name of your
-# hometown as a string. NOTE: your function *must* have the name,
-# get_hometown *exactly* or you won't pass the tests!
-##
+#################### PART 1 ####################
 
-# Replace this with your code
+"""PROMPT 1
 
+Write a function that returns `True` if a town name matches the name of your
+hometown.
 
-##
-# Complete the function below. It should take in 2 arguments: a first
-# name and a last name. Then, it should return a full name (ex. Balloon Icorn)
-#
-# Don't forget the docstring!
-##
+Examples: (let's say my hometown is San Francisco)
+    - 'Oakland' -> False
+    - 'San Francisco' -> True
 
+Arguments:
+    - The name of a town (str)
 
-def get_full_name():
-    pass  # Replace this line with your code
+Return:
+    - True or False (bool)
+"""
 
-
-##
-# Complete the function so it prints a different greeting, depending on
-# whether or someone comes from your hometown. It should take in a first
-# name, last name, and a hometown (all 3 args are strings).
-#
-# If the person is from your hometown, print
-#     Hi <full name>, we're from the same place!
-#
-# Otherwise, print
-#     Hi <full name>, I'd like to visit <town name>!
-#
-# Examples: (assume my hometown is San Francisco)
-#     - "Fido", "Bark", "Oakland" -> Hi Fido Bark, I'd like to visit Oakland!
-#     - "Mel", "M", "San Francisco" -> Hi Mel M, we're from the same place!
-##
+# Write your function here
 
 
-def output_greeting():
-    pass  # Replace this line with your code
+"""PROMPT 2
+
+Write a function that takes in a first and last name and returns a full name.
+
+Examples:
+    - 'Brighticorn', 'Hackbright' -> 'Brighticorn Hackbright'
+
+Arguments:
+    - First name (str)
+    - Last name (str)
+
+Return:
+    - Full name (str)
+"""
+
+# Write your function here
 
 
-##
-# Complete the function below so it generates a list with the specified
-# length.
-#
-# It should take in at least 1 argument --- the length of the list they
-# want to create as an integer.
-#
-# The user can pass in a 2nd argument if they want to fill the list with
-# a specific value. For ex., here's a 5-item list that's filled
-# with 100s: [100, 100, 100, 100, 100]
-#
-# Otherwise, just populate the list with None. For ex., here's a 5-item
-# list: [None, None, None, None, None]
-##
+"""PROMPT 3
+
+Write a function that prints a greeting.
+
+If the person is from your hometown, print
+    Hi <full name>, we're from the same place!
+
+Otherwise, print
+    Hi <full name>, I'd like to visit <town name>!
+
+HINT: You can reuse the functions that you wrote in PROMPT 1 and Prompt 2.
+
+Examples: (still assume my hometown is San Francisco)
+    - 'Fido', 'Bark', 'Oakland' -> Hi Fido Bark, I'd like to visit Oakland!
+    - 'Mel', 'M', 'San Francisco' -> Hi Mel M, we're from the same place!
+
+Arguments:
+    - First name (str)
+    - Last name (str)
+    - Hometown (str)
+"""
+
+# Write your function here
 
 
-def get_filled_list():
-    pass  # Replace this line with your code
+"""PROMPT 4
 
+Write a function that returns True if a fruit is a berry.
 
-##
-# Complete the function so it detects if something is a berry.
-#
-# It should take in 1 argument, a string, and return True if it's the name
-# of a berry.
-#
-# A berry is anything with the word "berry" in it. Ex.: "strawberry",
-# "catberry", "hi berry", "!!!! berry !!!!" all count as berries.
-##
+Valid berries are:
+    - strawberry
+    - raspberry
+    - blackberry
+    - currant
 
+Examples:
+    - currant -> True
+    - durian -> False
 
-def is_berry():
-    pass  # Replace this line with your code
+Arguments:
+    - A fruit (str)
+
+Return:
+    - True or False (bool)
+"""
+
+# Write your function here
 
 
 """PROMPT 5
@@ -96,45 +107,78 @@ Return:
 # Write your function here
 
 
-##
-# Complete the function below. It should take in a list as well as
-# 0 or more *additional* arguments.
-#
-# The function should add all those items to the end of the list and return
-# a new list. For example:
-#
-# >>> list_extender([1], 500, "hi", None)
-# [1, 500, "hi", None]
-# >>> list_extender([1, 2, 3])
-# [1, 2, 3]
-#
-# We haven't taught you how to do this (at least, not explicitly) so this
-# is your chance to test your googling abilities! You'll need to do some
-# research on your own --- find a way to write a Python function that can
-# take in an arbitrary amount of arguments.
-##
+"""PROMPT 6
+
+Write a function that returns the total cost of something by applying
+taxes and fees of various states.
+
+States will be given as their two-letter abbreviations. For example,
+California's abbreviation is 'CA'.
+
+There are some states with special fees. All fees should be added to the new
+subtotal *after* tax:
+    - CA (California): add a 3% (0.03) tax for recycling
+    - PA (Pennsylvania): add $2.00 safety fee
+    - MA (Massachusettes):
+        - add $1.00 for items with a base price of $100.00 or less
+        - add $3.00 for items over $100.00
+
+Arguments:
+    - Base price (int)
+    - Two-letter state abbreviation (str)
+    - Tax percentage as a decimal (optional, float)
+        - If a tax percentage is not given, it defaults to 0.05 (or 5%)
+
+Return:
+    - Total price after taxes and fees (float)
+"""
+
+# Write your function here
 
 
-def list_extender():
-    pass  # Replace this line with your code
+"""PROMPT 7
+
+Write a function that takes in a list and *any* number of additional arguments.
+The function should add all those items to the end of the  list and return
+the list.
+
+We haven't taught you how to do this! You'll need to do some research on your
+own --- find a way to write a Python function that can take in an arbitrary
+amount of arguments.
+
+Arguments:
+    - A list (list)
+    - Additional args
+
+Return:
+    - A list with arguments added to the end (list)
+"""
+
+# Write your function here
 
 
-##
-# Complete the function below so that it takes in a word and returns a tuple.
-# You'll do this in an interesting way though, so make sure you read these
-# directions thoroughly.
-#
-# First, the return value should be a tuple with 2 items in it ---
-# the given word and a string that's the word 3 times. Ex.: if the word is
-# "hi", then wordx3 is "hihihi"
-#
-# But here's how you need to do it:
-#
-# Your function will create an *inner* function. The *inner* function
-# will return wordx3. Then, call the *inner* function when you create the
-# tuple. If the word is "hi", you should return ("hi", "hihihi")
-##
+"""PROMPT 8
 
+Write a function that takes in a word and returns a tuple. You'll do this in an
+interesting way though, so make sure you read these directions thoroughly.
 
-def word_tripler():
-    pass  # Replace this line with your code
+The tuple will contain two items:
+    - The given word
+    - The given word, multiplied 3 times
+
+To do this, your function will create an *inner* function. The *inner*
+function will multiply the given word by 3 and return it.
+
+Then, the outer function will call the *inner* function to create a tuple.
+
+Examples:
+    - 'hi' -> ('hi', 'hihihi')
+
+Arguments:
+    - A word (str)
+
+Return:
+    - (word, wordx3) (tuple)
+"""
+
+# Write your function here
