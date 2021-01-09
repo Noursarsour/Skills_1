@@ -15,7 +15,6 @@
         <p><a href="https://fellowship.hackbrightacademy.com/materials/homework/how-to-skills-github/">Click here to read our guide</a> on</p>
         <ul>
           <li>how to clone an assessment repository from GitHub</li>
-          <li>when and how to commit your changes</li>
           <li>and how to push your changes and make sure we have all of your code</li>
         </ul>
         <p>
