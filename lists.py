@@ -1,99 +1,57 @@
-"""SKILLS: LISTS
+"""Skills 1: lists.py
 
-Complete the following functions.
+Complete the following functions. To get a better idea of how each function
+should behave, see the examples in test_lists.py.
 """
 
 
-def print_indices(items):
-    """Print each item in the list, followed by its index.
+def get_words_by_first_letter(words, letter):
+    """Return a list of all words that start with the given letter."""
 
-    Do this without using a "counting variable" --- in other words,
-    DON'T do this:
+    # TODO: replace this with your code
 
-        >>> count = 0
-        >>> for item in list:
-        ...     print(count)
-        ...     count = count + 1
-        ...
 
-    The output should look like this:
+def filter_by_length(items, length):
+    """Return a list of all items with the given length."""
 
-        >>> print_indices(['apple', 'berry', 'cherry'])
-        apple 0
-        berry 1
-        cherry 2
-    """
-
-    print("Nothing at all")
+    # TODO: replace this with your code
 
 
 def words_in_common(words1, words2):
-    """Return words that are shared between `words1` and `words2`.
+    """Return strings that words1 and words2 have in common."""
 
-    The returned words are sorted alphabetically.
-
-    NOTE: For this problem, feel free to use other data structures we've
-    learned about in this class.
-
-    For example:
-
-        >>> words_in_common(
-        ...     ['Python', 'Python', 'Python'],
-        ...     ['Lizard', 'Turtle', 'Python']
-        ... )
-        ['Python']
-
-    The returned list should not have any duplicates:
-
-        >>> words_in_common(
-        ...     ['cheese', 'cheese', 'cheese', 'cake'],
-        ...     ['cheese', 'hummus', 'beets', 'cake']
-        ... )
-        ['cake', 'cheese']
-
-    If there are no words in common, return an empty list:
-
-        >>> words_in_common(
-        ...     ['lamb', 'chili', 'cheese'],
-        ...     ['cake', 'ice cream']
-        ... )
-        []
-    """
-
-    return ['the wrong thing']
+    # TODO: replace this with your code
 
 
 def every_other_item(items):
-    """Return every other item in `items`, starting at first item.
+    """Return a list with every other element items (start with index 0)."""
 
-    For example:
-
-       >>> every_other_item(['a', 400, True, 'b', 0])
-       ['a', True, 0]
-    """
-
-    return ['the wrong thing']
+    # TODO: replace this with your code
 
 
 def smallest_n_items(items, n):
-    """Return the `n` smallest integers in list in descending order.
+    """Return the n smallest values in the given list, in descending order.
 
     You can assume that `n` will be less than the length of the list.
-
-    For example:
-
-        >>> smallest_n_items([2, 6006, 700, 42, 6, 59], 3)
-        [42, 6, 2]
-
-    If `n` is 0, return an empty list:
-
-        >>> smallest_n_items([3, 4, 5], 0)
-        []
-
-    Duplicates are OK:
-
-        >>> smallest_n_items([1, 1, 1, 1, 1, 1], 2)
-        [1, 1]
     """
 
-    return []
+    # TODO: replace this with your code
+
+
+def get_index(items, value):
+    """Search for a value in items and return its index.
+
+    If the value doesn't exist in items, return None. If the value appears more
+    than once, return the index of the first occurrence of the value.
+    """
+
+    # TODO: replace this with your code
+
+
+if __name__ == "__main__":
+    from pathlib import Path
+    import sys
+    import pytest
+
+    if len(sys.argv) > 1 and sys.argv[1] == "--test":
+        pytest.main([f"test_{Path(__file__).name}"])
