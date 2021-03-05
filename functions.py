@@ -119,10 +119,10 @@ def concat_all(items, *additional_items):
 
 
 if __name__ == "__main__":
-    if len(sys.argv) > 1 and sys.argv[1] == "--test":
-        from pathlib import Path
-        import sys
+    import sys
+    from pathlib import Path
 
+    if len(sys.argv) > 1 and sys.argv[1] == "--test":
         try:
             import pytest
             pytest.main([f"test_{Path(__file__).name}"])
