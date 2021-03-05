@@ -49,9 +49,15 @@ def get_index(items, value):
 
 
 if __name__ == "__main__":
-    from pathlib import Path
-    import sys
-    import pytest
-
     if len(sys.argv) > 1 and sys.argv[1] == "--test":
-        pytest.main([f"test_{Path(__file__).name}"])
+        from pathlib import Path
+        import sys
+
+        try:
+            import pytest
+            pytest.main([f"test_{Path(__file__).name}"])
+        except ModuleNotFoundError:
+            print("Unable to run tests because 'pytest' wasn't found :(")
+            print("Run the command below to install pytest:")
+            print()
+            print("    pip3 install pytest")
