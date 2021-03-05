@@ -22,4 +22,4 @@ you can follow [our instructions on How to do Skills Assessments from GitHub Cla
 ### How to work on your assessment on [repl.it](https://repl.it/)
 
 If your development environment isn't working, don't worry! You can work on this
-assessment on ***repl.it*** &mdash; [click here to view instructions on How to do Skills Assessments on Repl.it](#).
+assessment on ***repl.it*** &mdash; [click here to view instructions on How to do Skills Assessments on Repl.it](https://fellowship.hackbrightacademy.com/materials/resources/how-to-skills-replit/).
