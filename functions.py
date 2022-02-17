@@ -62,7 +62,8 @@ def has_same_hometown(profile1, profile2):
 
 
 def get_sqrt(x):
-    """Return the square root of x."""
+    """Return the approximate square root of x."""
+    # DO NOT MODIFY THIS FUNCTION!
 
     guess = 1
 
@@ -112,8 +113,11 @@ def is_close_enough(x, y):
     # TODO: replace this with your code
 
 
-def concat_all(items, *additional_items):
-    """Add all arguments to the end of items and return None."""
+def concat_all(items, additional_items):
+    """Add all additional_items to the end of items and return None.
+    
+    items and additional_items are both lists.
+    """
 
     # TODO: replace this with your code
 

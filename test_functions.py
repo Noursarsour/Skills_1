@@ -104,7 +104,7 @@ def test_concat_all_modify_in_place():
     """Test that concat_all modifies the given list in place."""
 
     test_list = []
-    concat_all(test_list, "apple", "berry")
+    concat_all(test_list, ["apple", "berry"])
 
     assert test_list == ["apple", "berry"]
 
@@ -112,4 +112,4 @@ def test_concat_all_modify_in_place():
 def test_concat_all_returns_none():
     """Test that concat_all returns None."""
 
-    assert concat_all([], "apple") is None
+    assert concat_all([], ["apple"]) is None
