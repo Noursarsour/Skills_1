@@ -91,7 +91,27 @@ def test_get_sqrt_float():
 def test_get_sqrt_has_not_been_modified():
     """Test that the body of get_sqrt has not been modified."""
 
-    original_src = 'def get_sqrt(x):\n    """Return the square root of x."""\n\n    guess = 1\n\n    while True:\n        div_result = div(x, guess)\n\n        # is_close_enough needs to return True or False. However, since the\n        # function is incomplete, it will return None. This will cause the\n        # while loop to continue infinitely. So, we raise a\n        # ValueError if we don\'t get a boolean to prevent\n        # an infinite loop.\n        if type(is_close_enough(div_result, guess)) is not bool:\n            raise ValueError(f"is_close_enough did not return a boolean.")\n\n        if is_close_enough(div_result, guess) is not True:\n            guess = avg(div_result, guess)\n        else:\n            return guess\n'
+    original_src = '''def get_sqrt(x):
+    """Return the approximate square root of x."""
+    # DO NOT MODIFY THIS FUNCTION!
+
+    guess = 1
+
+    while True:
+        div_result = div(x, guess)
+
+        # is_close_enough needs to return True or False. However, since the
+        # function is incomplete, it will return None. This will cause the
+        # while loop to continue infinitely. So, we raise a
+        # ValueError if we don't get a boolean to prevent
+        # an infinite loop.
+        if type(is_close_enough(div_result, guess)) is not bool:
+            raise ValueError(f"is_close_enough did not return a boolean.")
+
+        if is_close_enough(div_result, guess) is not True:
+            guess = avg(div_result, guess)
+        else:
+            return guess\n'''
 
     assert inspect.getsource(get_sqrt) == original_src
 
