@@ -8,25 +8,37 @@ should behave, see the examples in test_lists.py.
 def get_words_by_first_letter(words, letter):
     """Return a list of all words that start with the given letter."""
 
-    # TODO: replace this with your code
-
+    matching_words =[]
+    for word in words:
+        if word.startswith(letter):
+            matching_words.append(word)
+    return matching_words
+    
 
 def filter_by_length(items, length):
     """Return a list of all items with the given length."""
-
-    # TODO: replace this with your code
+    matching_length = []
+    for item in items:
+        if len(item) == length:
+            matching_length.append(item)
+    return matching_length
 
 
 def words_in_common(words1, words2):
     """Return strings that words1 and words2 have in common."""
+    common_words= []
+    for word in words1:
+        if word in words2:
+            if word not in common_words:
+                common_words.append(word)
+    return common_words
 
-    # TODO: replace this with your code
 
 
 def every_other_item(items):
     """Return a list with every other element items (start with index 0)."""
-
-    # TODO: replace this with your code
+    return items[::2]
+    
 
 
 def smallest_n_items(items, n):
@@ -34,9 +46,16 @@ def smallest_n_items(items, n):
 
     You can assume that `n` will be less than the length of the list.
     """
-
-    # TODO: replace this with your code
-
+    
+    #sorted_items = sorted(items)[:n]
+    #return sorted_items[::-1]
+    
+    items_list = []
+    for item in items:
+        if item <= n:
+            items_list.append(item)
+    items_list = sorted(items_list)
+    return items_list[::-1]
 
 def get_index(items, value):
     """Search for a value in items and return its index.
@@ -45,9 +64,10 @@ def get_index(items, value):
     than once, return the index of the first occurrence of the value.
     """
 
-    # TODO: replace this with your code
-
-
+    for item in range(len(items)):
+        if items[item] == value:
+            return item
+        
 if __name__ == "__main__":
     import sys
     from pathlib import Path
