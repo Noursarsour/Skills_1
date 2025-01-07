@@ -22,7 +22,11 @@ def is_berry(fruit):
     There are no other valid berries. For example, "berry" is not a valid berry.
     """
 
-    # TODO: replace this with your code
+    berries =["strawberry", "raspberry", "blackberry","currant"]
+    if fruit in berries:
+        return True
+    return False
+
 
 
 def create_intro_note(profile1, profile2):
@@ -47,7 +51,7 @@ def create_fullname(profile):
     the user's hometown. Ex.: ("Hack", "Bright", "San Francisco").
     """
 
-    # TODO: replace this with your code
+    return profile[0] +" " + profile[1]
 
 
 def has_same_hometown(profile1, profile2):
@@ -58,7 +62,9 @@ def has_same_hometown(profile1, profile2):
     the user's hometown. Ex.: ("Hack", "Bright", "San Francisco").
     """
 
-    # TODO: replace this with your code
+    if profile1[2] == profile2[2]:
+        return True
+
 
 
 def get_sqrt(x):
@@ -90,7 +96,7 @@ def div(x, y):
     In other words, return the result of dividing x by y.
     """
 
-    # TODO: replace this with your code
+    return x/y
 
 
 def avg(x, y):
@@ -101,6 +107,7 @@ def avg(x, y):
     """
 
     # TODO: replace this with your code
+    return (x + y)/2
 
 
 def is_close_enough(x, y):
@@ -110,7 +117,10 @@ def is_close_enough(x, y):
     0.0001.
     """
 
-    # TODO: replace this with your code
+    if abs(x - y) < 0.0001:
+        return True
+    return False
+    #return abs(x - y) < 0.0001
 
 
 def concat_all(items, additional_items):
@@ -119,7 +129,8 @@ def concat_all(items, additional_items):
     items and additional_items are both lists.
     """
 
-    # TODO: replace this with your code
+    for item in additional_items:
+        items.append(item)
 
 
 if __name__ == "__main__":
